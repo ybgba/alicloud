@@ -1,0 +1,24 @@
+### 目前不支持只显示单独的rds
+### 全部显示，但是只能对设置过的rds进行操作
+{
+  "Version": "1",
+  "Statement": [
+    {
+      "Action": "rds:*",
+	  "Effect": "Allow",
+      "Resource": [
+				"acs:rds:*:*:dbinstance/rds2qq931q0o5079i18q",
+				"acs:rds:*:*:dbinstance/rm-uf664p9866tzl5btv",
+				"acs:rds:*:*:dbinstance/rm-uf69fnmwi01qbe3o2",
+				"acs:rds:*:*:dbinstance/rm-uf6qd4f7kx16qq432",
+				"acs:rds:*:*:dbinstance/rm-uf68766v9vgjmixby",
+				"acs:rds:*:*:dbinstance/rm-uf64rc26e0110y08i"
+				]
+    },
+    {
+      "Action": "rds:Describe*",
+      "Resource": "*",
+      "Effect": "Allow"
+    }
+  ]
+}
